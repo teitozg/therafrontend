@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Reports.css";
-import { API_URL } from "../config";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Reports() {
   const [transactions, setTransactions] = useState([]);

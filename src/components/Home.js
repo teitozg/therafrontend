@@ -7,7 +7,7 @@ import {
   MdCloudUpload,
 } from "react-icons/md";
 import "./Home.css";
-import { API_URL } from "../config";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Home() {
   const [metrics, setMetrics] = useState({

@@ -1,7 +1,7 @@
 import React, { useState, useCallback, useEffect } from "react";
 import { useDropzone } from "react-dropzone";
 import { useParams } from "react-router-dom";
-import { API_URL } from "../config";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function DataInput() {
   const { sourceId } = useParams(); // Get sourceId from URL params

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Transactions.css";
-import { API_URL } from "../config";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function Transactions() {
   const navigate = useNavigate();

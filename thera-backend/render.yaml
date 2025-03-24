@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: thera-backend
+    env: node
+    buildCommand: |
+      cd thera-backend
+      echo "Installing Python requirements..."
+      pip install -r requirements.txt
+      echo "Installing Node dependencies..."
+      npm install
+    startCommand: |
+      cd thera-backend
+      npm start
+    envVars:
+      - key: DB_HOST
+        value: 35.185.8.133
+      - key: DB_USER
+        value: looker_user
+      - key: DB_PASSWORD
+        value: Atenas9democraci.
+      - key: DB_NAME
+        value: thera_final_database
+      - key: DB_PORT
+        value: "3306"
+      - key: PORT
+        value: "5001"

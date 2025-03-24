@@ -1,0 +1,6 @@
+pandas==2.0.3
+pymysql==1.1.0
+python-dotenv==1.0.0
+numpy==1.24.3
+openpyxl>=3.0.9
+xlrd>=2.0.1 
